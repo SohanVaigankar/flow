@@ -1,0 +1,68 @@
+:root {
+  /* --max-width: 1100px; */
+  --border-radius-xs: 0.125rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem; 
+
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  /* bg colours */
+  --primary-bg: #f5f5f5;
+
+  /* text colours */
+  --primary-text: #333;
+  --secondary-text: #3841a0;
+  --tertiary-text: #bababa;
+
+  /* border colours */
+  --border-primary: #878893
+  --border-secondary: #e0e0e0;
+
+  /* neutrals */
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-mono);
+}
+
+body {
+  color: var(--primary-text);
+  background: var(--primary-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.react-flow__node,
+.nopan,
+.selectable {
+  background-color: var(--white);
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.45);
+  border-radius: var(--border-radius-md);
+  width: 15rem;
+}
+
+.selected {
+  border: 1px solid var(--secondary-text);
+}
+
+
